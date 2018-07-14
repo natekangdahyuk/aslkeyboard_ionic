@@ -1,0 +1,586 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hangul.js 예제</title>
+        <meth charset="utf-8" />
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <link rel="stylesheet" href="scripts/jquery.mobile-1.4.5.min.css" />
+
+
+  </head>
+  <style>
+    .divBox{
+        top: 1700px;
+    }
+    .footer{
+        top: 1700px;
+    }
+
+
+
+    .divBox-j{
+        background-color: blue;
+
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 375px;
+        height: 330px;
+
+    }
+  </style>
+  <body>
+      <div data-role="page">
+          <div data-role="header">
+              <a href="#page1">메뉴</a>
+              <h1> 쉽게 말하기</h1>
+          </div>
+          <div data-role="content" style="position:relative;height:300px">
+              <!--자음 그룹판-->
+              <div class="ui-grid-b divBox-j" id="div_group_jaum-j" style="z-index:1;">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a group_um-j" data-domain="group_jaum_first-j">
+                      <button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>
+                  </div>
+                  <div class="ui-block-b">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c group_um-j" data-domain="group_jaum_second-j">
+                      <button data-role="button" data-inline="true" style="left:0">ㅁ,ㅂ<br>ㅅ,ㅇ</button>
+                  </div>
+
+                  <div class="ui-block-a group_um-j" data-domain="group_jaum_third-j">
+                      <button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>
+                  </div>
+                  <div class="ui-block-b">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c group_um-j" data-domain="group_jaum_forth-j">
+                      <button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>
+                  </div>
+
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b group_um-j" data-domain="group_jaum_fifth-j">
+                      <button data-role="button" data-inline="true">ㄲ,ㄸ<br>ㅃ,ㅉ</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+              <!--ㄱ,ㄴ,ㄷ,ㄹ-->
+              <div class="ui-grid-b divBox-j" id="group_jaum_first-j">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㄱ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㄱ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㄴ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㄴ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㄷ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㄷ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㄹ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㄹ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true"></button>-->
+                  </div>
+                  <div class="ui-block-c last_char">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+              <!--ㅁ,ㅂ,ㅅ,ㅇ-->
+              <div class="ui-grid-b divBox-j" id="group_jaum_second-j">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅁ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅁ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅂ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅂ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅅ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅅ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅇ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅇ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true"></button>-->
+                  </div>
+                  <div class="ui-block-c last_char">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+              <!--ㅈ,ㅊ,ㅋ,ㅌ-->
+              <div class="ui-grid-b divBox-j" id="group_jaum_third-j">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅈ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅈ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅊ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅊ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅋ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅋ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅌ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅌ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true"></button>-->
+                  </div>
+                  <div class="ui-block-c last_char">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+              <!--ㅍ,ㅎ,ㅆ-->
+              <div class="ui-grid-b divBox-j" id="group_jaum_forth-j">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅍ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅍ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅎ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅎ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅆ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅆ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char">
+                      <button data-role="button" data-inline="true"></button>
+                  </div>
+
+                  <div class="ui-block-a last_char">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true"></button>-->
+                  </div>
+                  <div class="ui-block-c last_char">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+              <!--ㄲ,ㄸ,ㅃ,ㅉ-->
+              <div class="ui-grid-b divBox-j" id="group_jaum_fifth-j">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㄲ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㄲ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㄸ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㄸ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅃ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅃ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅉ" data-um="jaum">
+                      <button data-role="button" data-inline="true">ㅉ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true"></button>-->
+                  </div>
+                  <div class="ui-block-c last_char">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+
+              <!--모음 그룹판-->
+              <div class="ui-grid-b divBox-j" id="div_group_moum-j">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a group_um-j" data-domain="group_moum_first-j">
+                      <button data-role="button" data-inline="true">ㅏ,ㅑ<br>ㅓ,ㅕ</button>
+                  </div>
+                  <div class="ui-block-b">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c group_um-j" data-domain="group_moum_second-j">
+                      <button data-role="button" data-inline="true">ㅗ,ㅛ<br>ㅜ,ㅠ</button>
+                  </div>
+
+                  <div class="ui-block-a group_um-j" data-domain="group_moum_third-j">
+                      <button data-role="button" data-inline="true">ㅡ,ㅣ<br>ㅐ,ㅒ</button>
+                  </div>
+                  <div class="ui-block-b">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c group_um-j" data-domain="group_moum_forth-j">
+                      <button data-role="button" data-inline="true">ㅔ,ㅖ<br>ㅘ,ㅢ</button>
+                  </div>
+
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b group_um-j" data-domain="group_moum_fifth-j">
+                      <button data-role="button" data-inline="true">ㅙ,ㅚ<br>ㅟ,ㅝ</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+              <!--ㅏ,ㅑ,ㅓ,ㅕ-->
+              <div class="ui-grid-b divBox-j" id="group_moum_first-j">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅏ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅏ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅑ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅑ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅓ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅓ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅕ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅕ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true"></button>-->
+                  </div>
+                  <div class="ui-block-c last_char">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+              <!--ㅗ,ㅛ,ㅜ,ㅠ-->
+              <div class="ui-grid-b divBox-j" id="group_moum_second-j">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅗ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅗ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅛ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅛ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅜ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅜ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅠ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅠ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true"></button>-->
+                  </div>
+                  <div class="ui-block-c last_char">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+              <!--ㅡ,ㅣ,ㅐ,ㅒ-->
+              <div class="ui-grid-b divBox-j" id="group_moum_third-j">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅡ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅡ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅣ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅣ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅐ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅐ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅒ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅒ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true"></button>-->
+                  </div>
+                  <div class="ui-block-c last_char">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+              <!--ㅔ,ㅖ,ㅘ,ㅢ-->
+              <div class="ui-grid-b divBox-j" id="group_moum_forth-j">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅔ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅔ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅖ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅖ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅘ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅘ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅢ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅢ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true"></button>-->
+                  </div>
+                  <div class="ui-block-c last_char">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+              <!--ㅙ,ㅚ,ㅟ,ㅝ-->
+              <div class="ui-grid-b divBox-j" id="group_moum_fifth-j">
+                  <div class="ui-block-a">
+                      <!--<button data-role="button" data-inline="true">태그1</button>-->
+                  </div>
+                  <div class="ui-block-b go_jaum">
+                      <button data-role="button" data-inline="true">처음<br>으로</button>
+                  </div>
+                  <div class="ui-block-c">
+                      <!--<button data-role="button" data-inline="true">태그3</button>-->
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅙ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅙ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅚ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅚ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char" data-char="ㅟ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅟ</button>
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true">ㄱ,ㄴ<br>ㄷ,ㄹ</button>-->
+                  </div>
+                  <div class="ui-block-c last_char" data-char="ㅝ" data-um="moum">
+                      <button data-role="button" data-inline="true">ㅝ</button>
+                  </div>
+
+                  <div class="ui-block-a last_char">
+                      <!--<button data-role="button" data-inline="true">ㅈ,ㅊ<br>ㅋ,ㅌ</button>-->
+                  </div>
+                  <div class="ui-block-b last_char">
+                      <!--<button data-role="button" data-inline="true"></button>-->
+                  </div>
+                  <div class="ui-block-c last_char">
+                      <!--<button data-role="button" data-inline="true">ㅍ,ㅎ<br>ㅆ</button>-->
+                  </div>
+              </div>
+
+
+
+
+          </div><!-- content//-->
+          <div data-role="footer">
+              <input type="text" id="txt_output" readonly="true" />
+          </div>
+      </div>
+
+
+
+
+
+  <div class="footer" style="z-index:30;position:absolute;left:8px;">
+      <!--
+        <label for="input">입력 문장 </label>
+        <textarea class="form-control" id="input"></textarea>
+        <label for="output">출력 문장</label>
+      -->
+      <input type="text" size="14" style="-webkit-appearance: none;-webkit-border-radius: 0"/>
+      <br>
+      <!--<textarea id="output" style="width:100px"></textarea>-->
+
+      <button class="go_del" style="width:100px;font-size:0.1em">한자삭제</button>
+
+  </div>
+
+  <script src="./scripts/jquery-1.7.1.min.js"></script>
+  <script src="./scripts/jquery.mobile-1.4.5.min.js"></script>
+
+  <!--<script src="/scripts/jquery-1.7.1.min.js"></script>-->
+
+
+    <script type="text/javascript" src="daguldagul/hangul.js"></script>
+    <script type="text/javascript" src="daguldagul/index.js?version=1.0.1"></script>
+    <script type="text/javascript" src="daguldagul/app.js"></script>
+
+  </body>
+</html>
