@@ -51,8 +51,10 @@ $(document).ready(function () {
         newStr = newStr + g_arr[i];
       }
       g_input = newStr;
-      $('textarea[id=input]').val(g_input);
-      $('textarea[id=output]').val(Hangul.assemble(g_input));
+      //$('textarea[id=input]').val(g_input);
+      //$('textarea[id=output]').val(Hangul.assemble(g_input));
+      $('#txt_output').val(g_input);
+      $('#txt_output').val(Hangul.assemble(g_input));
 
     });//-->지우기
 
@@ -64,4 +66,3 @@ function init(){
     $('.divBox-j').css('z-Index','0');
     $('#div_group_jaum-j').css('z-Index','1');
 }
-
