@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Hangul.js 예제</title>
+    <title>말해줘</title>
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
@@ -27,8 +27,9 @@
   </style>
   <body>
       <div data-role="page">
-          <div data-role="header">
-              <a href="#page1">메뉴</a>
+          <div data-role="header">              
+              <a class="go_del">삭제</a>
+              <!--<button class="go_del" data-role="button" data-inline="true" style="width:100px;font-size:1.1em">삭제</button>-->
               <h1> 쉽게 말하기</h1>
           </div>
           <div data-role="content" style="position:relative;height:300px">
@@ -543,8 +544,7 @@
 
           </div><!-- content//-->
           <div data-role="footer">
-              <input type="text" id="txt_output" readonly="true" />
-              <button class="go_del" data-role="button" data-inline="true" style="width:100px;font-size:0.1em">삭제</button>
+              <input type="text" id="txt_output" readonly="true" />              
           </div>
       </div>
 
